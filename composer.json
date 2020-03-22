@@ -1,0 +1,26 @@
+{
+  "name":"pi-hole-builder",
+  "description":"blacklist file builder for PI hole",
+  "type": "project",
+  "license": ["GPL-3.0-only"],
+  "require":{
+    "php": "^7.0",
+    "ext-mbstring": "*",
+    "symfony/console": "^5.0",
+    "psr/log": "^1.1"
+  },
+  "authors":[
+    {
+      "name": "Eric Schreiterer",
+      "role": "Developer"
+    }
+  ],
+  "autoload":{
+    "psr-4": {
+      "FoPH\\Builder\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": { "FoPH\\Builder\\": "tests/" }
+  }
+}
